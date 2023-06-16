@@ -69,7 +69,6 @@ export default class Accessibility {
     if (config) {
       config = { ...this.config, ...config };
     } else config = { ...this.config };
-    console.log(config);
     //contrast
     if (config.contrastControl) {
       const cardBody = createElementAndSetAttributes('div', {
@@ -91,7 +90,6 @@ export default class Accessibility {
         id: 'contrast-control',
       });
       input.addEventListener('change', (e) => {
-        console.log(e.target.value);
         if (e.target.value == 0) {
           // const elements = document.querySelectorAll('*');
           // for (let i in Array.from(elements)) {
@@ -226,6 +224,5 @@ export default class Accessibility {
     acceessiblityMenu.append(...elmToPrepend);
     mainContainer.append(acceessiblityMenu);
     targetContainer.prepend(mainContainer);
-    console.log(mainContainer);
   }
 }
