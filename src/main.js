@@ -1,4 +1,5 @@
 import './style/style.css';
+
 import { createElementAndSetAttributes } from './helpers/htmlHelpers';
 class Accessibility {
   constructor(arg) {
@@ -37,7 +38,7 @@ class Accessibility {
       'aria-controls': 'collapseWidthExample',
     });
     const menuControlButtonImage = createElementAndSetAttributes('img', {
-      src: './res/accessibility-icon.svg',
+      src: './assets/',
       alt: 'Accessibility Icon',
       width: '45',
       height: '45',

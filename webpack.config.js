@@ -1,6 +1,5 @@
 const path = require('path');
 // var JsDocPlugin = require('jsdoc-webpack-plugin');
-const MergeAndIncludeGlobally = require('webpack-merge-and-include-globally');
 
 module.exports = {
   mode: 'production', // or 'production'
@@ -37,16 +36,16 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    // new JsDocPlugin({
-    //   conf: 'jsdoc.conf.js',
-    //   cwd: '.',
-    //   preserveTmpFile: false,
-    //   recursive: false,
-    // }),
-    new MergeAndIncludeGlobally({
-      files: ['./src/main.js'],
-      mergeInto: 'bundle.js',
-    }),
-  ],
+  // plugins: [
+  //   // new JsDocPlugin({
+  //   //   conf: 'jsdoc.conf.js',
+  //   //   cwd: '.',
+  //   //   preserveTmpFile: false,
+  //   //   recursive: false,
+  //   // }),
+  //   new MergeAndIncludeGlobally({
+  //     files: ['./src/main.js'],
+  //     mergeInto: 'bundle.js',
+  //   }),
+  // ],
 };

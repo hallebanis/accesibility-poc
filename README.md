@@ -10,11 +10,20 @@ features:
 
 import the sdk into a html project:
 1- create a html project
-2- in the head section add this line:
+2- in the head section add this lines:
 
 <script src="https://cdn.jsdelivr.net/gh/hallebanis/accesibility-poc/dist/bundle.js" defer></script>
 
-3- create a js file : script.js for exemple and copy theese lines
+make sure to include also bootstrap js bundle file:
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"
+    defer>
+  </script>
+
+if the
+
+3- create a js file : for exemple script.js and copy theese lines
 
 `const n = new Accessibility();`
 `n.init();`
@@ -46,4 +55,4 @@ exemple we want to desactivate only image control feature and attach the accessi
 `const n = new Accessibility();`
 `const target= document.getElementById('target-container')`
 `const config={ imageControl:false }`
-`n.init(undefined,'end');`
+`n.init(undefined,'end',config);`
