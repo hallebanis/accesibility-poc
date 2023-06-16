@@ -6,7 +6,7 @@ module.exports = {
 
   entry: './src/main.js',
   output: {
-    filename: 'bundle.js',
+    filename: 'sdk.js',
     path: path.resolve(__dirname, 'dist'),
     library: {
       name: 'Accessibility',
