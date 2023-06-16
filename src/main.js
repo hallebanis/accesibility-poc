@@ -75,7 +75,6 @@ class Accessibility {
     if (config) {
       config = { ...this.config, ...config };
     } else config = { ...this.config };
-    console.log(config);
     //contrast
     if (config.contrastControl) {
       const cardBody = createElementAndSetAttributes('div', {
@@ -97,7 +96,6 @@ class Accessibility {
         id: 'contrast-control',
       });
       input.addEventListener('change', (e) => {
-        console.log(e.target.value);
         if (e.target.value == 0) {
           // const elements = document.querySelectorAll('*');
           // for (let i in Array.from(elements)) {
@@ -232,8 +230,6 @@ class Accessibility {
     acceessiblityMenu.append(...elmToPrepend);
     mainContainer.append(acceessiblityMenu);
     targetContainer.prepend(mainContainer);
-    console.log(mainContainer);
   }
 }
 export default Accessibility;
-// export { Accessibility };
