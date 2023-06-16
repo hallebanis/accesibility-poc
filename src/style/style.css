@@ -1,0 +1,26 @@
+.invert {
+    filter: invert(100%);
+    background-color: black;
+    color: black !important;
+}
+
+.dark-mode div {
+    /* Styles for dark mode */
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.dark-mode p {
+    /* Override color for paragraphs in dark mode */
+    color: #cccccc;
+}
+
+.dark-mode .container h1 {
+    /* Override color for headings inside container in dark mode */
+    color: #dddddd;
+}
+
+.dark-mode .collapse .card {
+    background-color: #000000;
+    border: 1px solid white !important;
+}
