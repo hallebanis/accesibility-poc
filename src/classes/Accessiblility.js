@@ -2,7 +2,7 @@ import { createElementAndSetAttributes } from '../helpers/htmlHelpers.js';
 export default class Accessibility {
   constructor(arg) {
     /**
-     * @type {{imageControl?:boolean,contrastControl?:boolean,fontControl:boolean,textToSpeech:boolean}}
+     * @type {{imageControl:boolean,contrastControl:boolean,fontControl:boolean,textToSpeech:boolean}}
      */
     this.config = {
       imageControl: true,
@@ -17,7 +17,7 @@ export default class Accessibility {
    *
    * @param {HTMLElement} targetContainer
    * @param {'start' | 'end'} position
-   * @param {{imageControl?:boolean,contrastControl?:boolean,fontControl:boolean,textToSpeech:boolean}} config
+   * @param {{imageControl:boolean,contrastControl:boolean,fontControl:boolean,textToSpeech:boolean}} config
    */
   init(
     targetContainer = document.body,

@@ -1,4 +1,5 @@
 const path = require('path');
+var JsDocPlugin = require('jsdoc-webpack-plugin');
 
 module.exports = {
   mode: 'production', // or 'production'
@@ -35,4 +36,12 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new JsDocPlugin({
+      conf: 'jsdoc.conf.js',
+      cwd: '.',
+      preserveTmpFile: false,
+      recursive: false,
+    }),
+  ],
 };
