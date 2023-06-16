@@ -1,5 +1,3 @@
-// const { default: Accessibility } = require('./classes/Accessiblility');
-
 import './style/style.css';
 import { createElementAndSetAttributes } from './helpers/htmlHelpers';
 class Accessibility {

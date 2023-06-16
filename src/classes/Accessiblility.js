@@ -1,5 +1,5 @@
-import { createElementAndSetAttributes } from '../helpers/htmlHelpers';
-class Accessibility {
+import { createElementAndSetAttributes } from '../helpers/htmlHelpers.js';
+export default class Accessibility {
   constructor(arg) {
     /**
      * @type {{imageControl?:boolean,contrastControl?:boolean,fontControl:boolean,textToSpeech:boolean}}
@@ -229,5 +229,3 @@ class Accessibility {
     console.log(mainContainer);
   }
 }
-
-export default Accessibility;

@@ -1,10 +1,17 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'production', // or 'production'
+
   entry: './src/main.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    library: {
+      name: 'Accessibility',
+      type: 'umd',
+      export: 'default',
+    },
   },
   optimization: {
     minimize: true, // Enable minification
