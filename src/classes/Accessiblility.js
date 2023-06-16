@@ -36,7 +36,7 @@ export default class Accessibility {
       'aria-controls': 'collapseWidthExample',
     });
     const menuControlButtonImage = createElementAndSetAttributes('img', {
-      src: './res/accessibility-icon.svg',
+      src: './assets/accessibility-icon.svg',
       alt: 'Accessibility Icon',
       width: '45',
       height: '45',
