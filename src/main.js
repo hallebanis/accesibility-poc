@@ -38,13 +38,15 @@ class Accessibility {
       'aria-expanded': 'false',
       'aria-controls': 'collapseWidthExample',
     });
-    console.log(iconSvg);
+    // console.log(iconSvg);
     const menuControlButtonImage = createElementAndSetAttributes('img', {
-      src: iconSvg,
+      // src: iconSvg,
       alt: 'Accessibility Icon',
       width: '45',
       height: '45',
     });
+
+    menuControlButtonImage.src = iconSvg;
 
     //set image attributes
     menuControlButton.append(menuControlButtonImage);
