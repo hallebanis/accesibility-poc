@@ -38,7 +38,7 @@ class Accessibility {
       'aria-expanded': 'false',
       'aria-controls': 'collapseWidthExample',
     });
-    // console.log(iconSvg);
+    console.log('con', iconSvg);
     const menuControlButtonImage = createElementAndSetAttributes('img', {
       // src: iconSvg,
       alt: 'Accessibility Icon',
