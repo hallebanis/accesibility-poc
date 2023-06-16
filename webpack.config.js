@@ -6,7 +6,7 @@ module.exports = {
 
   entry: './src/main.js',
   output: {
-    filename: 'sdk.js',
+    filename: 'bnd.js',
     path: path.resolve(__dirname, 'dist'),
     library: {
       name: 'Accessibility',
